@@ -1,5 +1,11 @@
 # DIOX Roadmap
 
+## Live Bootstrap
+- Complete XiaoZhi console live setup for DIOX
+- Connect MCP endpoint through local MCP bridge
+- Enable Brave Search, Fetch, and Time only
+- Run live voice test plan and tune short answers
+
 ## P0
 - Configure DIOX role prompt in XiaoZhi console
 - Benchmark XiaoZhi models for Italian voice speed

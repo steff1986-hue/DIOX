@@ -1,5 +1,10 @@
 # MCP Tools Staged Plan
 
+## Live Bootstrap (Now)
+- Activate MCP endpoint in XiaoZhi console
+- Connect bridge runtime locally
+- Enable only Brave Search MCP, Fetch MCP, Time MCP
+
 ## Stage 1
 - Brave Search MCP
 - Fetch MCP
