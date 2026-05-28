@@ -1,0 +1,29 @@
+xiaozhi_mcp_endpoint: ""
+mcp_hub_url: ""
+
+brave_search_mcp:
+  endpoint: ""
+  transport: ""
+
+fetch_mcp:
+  endpoint: ""
+  transport: ""
+
+time_mcp:
+  endpoint: ""
+  transport: ""
+
+tavily_mcp_optional:
+  endpoint: ""
+  transport: ""
+
+firecrawl_mcp_optional:
+  endpoint: ""
+  transport: ""
+
+memory_policy:
+  mode: "short_term"
+  store_sensitive: false
+
+confirmation_policy:
+  require_confirmation_for_high_risk: true

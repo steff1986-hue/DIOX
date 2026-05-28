@@ -1,0 +1,26 @@
+name: diox-docs-check
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  validate-overlay:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Ensure required overlay files exist
+        run: |
+          test -f AGENTS.md
+          test -f DIOX.md
+          test -f diox/README.md
+          test -f diox/.env.example
+          test -f diox/mcp/tool-allowlist.yaml
+
+      - name: Shell syntax check
+        run: bash -n diox/scripts/*.sh
+
+      - name: Validate DIOX overlay
+        run: bash diox/scripts/validate-diox-overlay.sh
