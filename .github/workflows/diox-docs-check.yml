@@ -16,6 +16,10 @@ jobs:
           test -f AGENTS.md
           test -f DIOX.md
           test -f diox/README.md
+          test -f diox/live/README.md
+          test -f diox/live/xiaozhi-console-live-setup.md
+          test -f diox/live/mcp-internet-tools-setup.md
+          test -f diox/live/test-plan-live.md
           test -f diox/.env.example
           test -f diox/mcp/tool-allowlist.yaml
 
