@@ -1,0 +1,54 @@
+policy: deny_by_default
+
+tools:
+  web.search:
+    access: allow
+    notes: "General web search through approved MCP provider."
+  web.news_search:
+    access: allow
+    notes: "Current news search."
+  web.fetch_url:
+    access: allow
+    notes: "Read user-provided or search-result URLs."
+  web.local_search:
+    access: allow
+    notes: "Places and local services."
+  web.image_search:
+    access: allow
+    notes: "Image lookup, not image generation."
+  time.now:
+    access: allow
+  time.timezone_convert:
+    access: allow
+  calculator.basic:
+    access: allow
+
+  memory.read_preferences:
+    access: allow
+  memory.write_preferences:
+    access: require_confirmation
+
+  browser.operate_page:
+    access: require_confirmation
+    notes: "Only for explicit user-approved browsing actions."
+
+  email.read:
+    access: deny
+  email.send:
+    access: deny
+  calendar.read:
+    access: deny
+  calendar.write:
+    access: deny
+  purchases.make:
+    access: deny
+  payments.execute:
+    access: deny
+  shell.run:
+    access: deny
+  secrets.read:
+    access: deny
+  system.control:
+    access: deny
+  server.control:
+    access: deny
